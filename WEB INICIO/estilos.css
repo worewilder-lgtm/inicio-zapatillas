@@ -1,0 +1,271 @@
+/* ==========================================================================
+   1. RESETEO Y CONFIGURACIÓN GENERAL
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ==========================================================================
+   2. ENCABEZADO (HEADER) Y NAVEGACIÓN
+   ========================================================================== */
+.site-header {
+    background-color: #111111;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #ff4757; /* Color de acento rojo */
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #ff4757;
+}
+
+/* Indicador de página activa en el menú */
+.main-nav a.active {
+    color: #ff4757;
+    border-bottom: 2px solid #ff4757;
+    padding-bottom: 4px;
+}
+
+/* ==========================================================================
+   3. SECCIÓN HERO (BIENVENIDA)
+   ========================================================================== */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffffff;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #111111;
+}
+
+.hero p {
+    color: #666666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ==========================================================================
+   4. SECCIÓN DE PRODUCTOS (GRID)
+   ========================================================================== */
+.products-section h2 {
+    margin-bottom: 25px;
+    text-align: center;
+    color: #111111;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover; /* Mantiene la proporción de la zapatilla sin deformar */
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #222222;
+}
+
+.product-card .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff4757;
+    margin-bottom: 15px;
+}
+
+.btn-buy {
+    background-color: #111111;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.btn-buy:hover {
+    background-color: #ff4757;
+}
+
+/* ==========================================================================
+   5. SECCIÓN PARA LA PÁGINA DE CONTACTO
+   ========================================================================== */
+.contact-section {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #111111;
+}
+
+.contact-section p {
+    text-align: center;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333333;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 15px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #ff4757; /* Cambia a rojo al hacer clic */
+}
+
+.btn-submit {
+    background-color: #111111;
+    color: #ffffff;
+    border: none;
+    padding: 14px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #ff4757;
+}
+
+/* ==========================================================================
+   6. PIE DE PÁGINA (FOOTER)
+   ========================================================================== */
+.site-footer {
+    background-color: #111111;
+    color: #aaaaaa;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+    font-size: 14px;
+}
+
+.site-footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+   7. DISEÑO RESPONSIVO (PANTALLAS DE CELULARES)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .contact-section {
+        padding: 20px;
+        margin: 20px 10px;
+    }
+}

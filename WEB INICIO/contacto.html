@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | SneakerX</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header class="site-header">
+    <div class="logo">
+        <!-- Regresa al inicio al hacer clic -->
+        <h1><a href="index.html" style="color: inherit; text-decoration: none;">Sneaker<span>X</span></a></h1>
+    </div>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="catalogo.html">catálogo</a></li>
+            <li><a href="contacto.html" class="active">contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <!-- Sección de Formulario de Contacto -->
+    <main class="container">
+        <section class="contact-section">
+            <h2>Ponte en Contacto</h2>
+            <p>¿Tienes dudas sobre tu talla o un pedido? Escríbenos y te responderemos en menos de 24 horas.</p>
+            
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Tu Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe aquí tu consulta..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer class="site-footer">
+        <p>&copy; 2026 SneakerX. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
